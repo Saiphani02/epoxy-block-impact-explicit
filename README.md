@@ -1,15 +1,21 @@
 # Epoxy block under impact: 0° vs 45°
 
-**Engineering tools:** ANSYS Mechanical 2026 R1 · Explicit Dynamics (AUTODYN) · STEP CAD geometry
+**Engineering tools:** ANSYS Mechanical 2026 R1 · Explicit Dynamics (AUTODYN)
 
-## CAD and simulation deliverables
+## Models and simulation files
 
-- [Native ANSYS Mechanical project](ansys/epoxy_block_impact.mechdb).
-- [200 mm block CAD geometry (STEP)](geometry/block_200mm.step).
-- [ANSYS setup and solution walkthrough](media/ansys_walkthrough.mp4).
-- [Mesh image](media/mesh.png), [deformation contour](media/deg45_Total_Deformation.png), and [numerical results](results/results.json).
+| Deliverable | File | Purpose |
+| --- | --- | --- |
+| Simulation model | [ANSYS Mechanical project](ansys/epoxy_block_impact.mechdb) | Inspect the native analysis model |
+| CAD geometry | [200 mm block STEP](geometry/block_200mm.step) | Import the block into a CAD or analysis tool |
+| Material definition | [Epoxy material XML](ansys/epoxy_material.xml) | Material data supplied with the study |
+| Results | [Result data](results/results.json) | Compare the 0° and 45° cases |
+| Walkthrough | [ANSYS setup video](media/ansys_walkthrough.mp4) | View the recorded setup |
+| Mesh | [Mesh image](media/mesh.png) | Inspect the published discretization |
 
-The engineering work covers material definition, hex meshing, fixed support, initial velocity, explicit solution, and comparison with wave-speed estimates. Python files support result export and analytical checks.
+**Start here:** [Download, opening instructions, and file catalog](docs/CAD_GUIDE.md).
+
+Python files support result export and analytical checks.
 
 Same block, same speed, only the direction changes. The angled hit deforms the epoxy 2.3 times more than the head-on one.
 
