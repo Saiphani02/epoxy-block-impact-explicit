@@ -1,0 +1,34 @@
+{
+ "deg0": {
+  "status": "Done", 
+  "Equivalent Stress": {
+   "unit": "MPa", 
+   "max_end": 4.3890221700582135, 
+   "max_over_time": 4.738437489155856
+  }, 
+  "Total Deformation": {
+   "unit": "mm", 
+   "max_end": 0.11573409292947959, 
+   "max_over_time": 0.12878263078164309
+  }, 
+  "name": "Impact 0 deg"
+ }, 
+ "mesh": [
+  9261, 
+  8000
+ ], 
+ "deg45": {
+  "status": "Done", 
+  "Equivalent Stress": {
+   "unit": "MPa", 
+   "max_end": 6.235380689747312, 
+   "max_over_time": 7.409276276047281
+  }, 
+  "Total Deformation": {
+   "unit": "mm", 
+   "max_end": 0.25790097552669217, 
+   "max_over_time": 0.3024026902009721
+  }, 
+  "name": "Impact 45 deg"
+ }
+}
